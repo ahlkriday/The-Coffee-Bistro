@@ -775,12 +775,14 @@ footer p {
 }
 
 /* Intersection Observer Animation Classes */
+/* Updated Animation Classes */
 .fade-in {
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1; /* Changed from 0 to 1 to ensure visibility */
+    transform: translateY(0); /* Reset transform */
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
+/* You can keep this for a subtle scroll effect if the JS works */
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
